@@ -1,0 +1,14 @@
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background-color: #f1f5f9;
+  color: #111827;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.appContainer {
+  width: 100%;
+  max-width: 1050px;
+  padding: 24px;
+}

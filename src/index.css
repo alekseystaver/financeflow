@@ -1,0 +1,44 @@
+:root {
+  /* Light theme */
+  --bg: #f1f5f9;            /* page background */
+  --text: #111827;          /* default text */
+  --muted: #6b7280;         /* secondary text */
+
+  --surface: #ffffff;       /* cards/containers */
+  --surface-muted: #f8fafc; /* muted card background */
+  --border: #e5e7eb;        /* subtle borders */
+
+  --primary: #2563eb;       /* primary accent */
+  --info: #38bdf8;          /* link hover/info */
+  --success: #16a34a;
+  --danger: #dc2626;
+
+  --elev-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  --elev-shadow-strong: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+body.dark {
+  /* Dark theme */
+  --bg: #0f172a;            /* slate-900 */
+  --text: #e5e7eb;          /* gray-200 */
+  --muted: #9ca3af;         /* gray-400 */
+
+  --surface: #1f2937;       /* gray-800 */
+  --surface-muted: #111827; /* gray-900 */
+  --border: #374151;        /* gray-700 */
+
+  --primary: #60a5fa;       /* lighter blue for dark bg */
+  --info: #7dd3fc;
+  --success: #22c55e;
+  --danger: #f87171;
+
+  --elev-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  --elev-shadow-strong: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* Make sure base elements inherit theme colors */
+html, body, #root {
+  background-color: var(--bg);
+  color: var(--text);
+}
+

@@ -1,0 +1,43 @@
+.form { 
+    margin-top: 16px; 
+    padding: 12px; 
+    border-radius: 10px; 
+    background: var(--surface);
+    box-shadow: var(--elev-shadow); 
+}
+.row { 
+    display: grid; 
+    grid-template-columns: 1fr 120px 120px; 
+    gap: 8px; 
+    align-items: center;
+}
+.input, .select { 
+    padding: 8px 10px; 
+    border-radius: 8px; 
+    border: 1px solid var(--border); 
+    background: var(--surface-muted);
+    color: var(--text);
+}
+.actions { 
+    margin-top: 10px; 
+    display: flex; 
+    justify-content: flex-end; 
+}
+.addButton { 
+    background: var(--primary); 
+    color: white; 
+    padding: 8px 12px; 
+    border: none; 
+    border-radius: 8px; 
+    cursor: pointer; 
+}
+@media (max-width: 720px) { 
+    .row { 
+        grid-template-columns: 1fr; 
+    } 
+    .actions { 
+        justify-content: stretch; 
+    } .addButton { 
+        width: 100%;
+    } 
+}

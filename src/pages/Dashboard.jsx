@@ -29,6 +29,10 @@ export default function Dashboard() {
 
   const balance = income - expense;
 
+  // Debug logging
+  console.log('Transactions:', transactions);
+  console.log('Income:', income, 'Expense:', expense, 'Balance:', balance);
+
   return (
     <div className={styles.dashboard}>
       <h2 className={styles.title}>Dashboard</h2>

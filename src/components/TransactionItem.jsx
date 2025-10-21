@@ -13,7 +13,7 @@ export default function TransactionItem({ transaction, onDelete }) {
 
       <div className={styles.itemRight}>
         <div className={styles.itemAmount}>
-          {type === "income" ? `+${amount} ₽` : `-${amount} ₽`}
+          {type === "income" ? `+${amount} BYN` : `-${amount} BYN`}
         </div>
         <button className={styles.deleteButton} onClick={() => onDelete && onDelete(id)}>
           Удалить

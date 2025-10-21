@@ -15,6 +15,9 @@ const TransactionForm = ({ onAdd }) => {
       onAdd({ title: normalizedTitle, amount: normalizedAmount, type });
     }
 
+    setTitle("");
+    setAmount(1);
+    setType("expense");
   };
 
   return (

@@ -11,4 +11,113 @@ body {
   width: 100%;
   max-width: 1050px;
   padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.fund-form {
+  background: var(--surface);
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: var(--elev-shadow);
+  margin-bottom: 16px;
+  display: grid;
+  grid-template-columns: 1fr 120px 120px;
+  gap: 8px;
+  align-items: center;
+}
+
+.fund-form input,
+.fund-form button {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface-muted);
+  color: var(--text);
+}
+
+.fund-form button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.fund-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+}
+
+.fund-empty {
+  color: var(--muted);
+}
+
+.fund-card {
+  background: var(--surface);
+  color: var(--text);
+  border-radius: 10px;
+  box-shadow: var(--elev-shadow);
+  padding: 12px;
+}
+
+.fund-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fund-title {
+  font-weight: 600;
+}
+
+.fund-goal {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.fund-balance {
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.fund-progress {
+  color: var(--info);
+  font-size: 12px;
+}
+
+.fund-tx-form {
+  display: grid;
+  grid-template-columns: 1fr 140px 120px;
+  gap: 8px;
+}
+
+.fund-tx-form input,
+.fund-tx-form select {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface-muted);
+  color: var(--text);
+}
+
+.fund-tx-form button {
+  background: var(--primary);
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@media (max-width: 720px) {
+  .fund-form {
+    grid-template-columns: 1fr;
+  }
+  
+  .fund-tx-form {
+    grid-template-columns: 1fr;
+  }
 }
